@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-color: rgb(255, 255, 255);
+    --fg-color: rgb(0, 0, 0);
+    --dark-blue: rgb(18, 21, 27);
+    --secondary-font-family: Helvetica, system-ui, -apple-system,
+        BlinkMacSystemFont, Arial sans-serif;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: rgb(0,0,0);
+        --fg-color: rgb(255, 255, 255);
+    }
+} */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--dark-blue);
+}
+
+.container {
+    width: 92%;
+}
+
+.ce-btn {
+    border-radius: 999px;
+    padding: 10px 20px;
+    background-color: white;
+    width: fit-content;
+    border: 4px solid white;
+    font-size: 18px;
+    font-weight: 600;
+    @screen lg {
+        padding: 12px 24px;
+        font-size: 20px;
+    }
+}
